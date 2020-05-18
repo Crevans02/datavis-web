@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% include './includes/head.twig' %}
+<body class="bg-beige font-sans text-dark">
+{% include './includes/header.twig' %}
+
+<main>
+  <div class="container mx-auto">
+
+    <!-- Article Header -->
+    <div class="w-full pt-16">
+      <div class="w-full md:w-3/4">
+        <a href="/" class="mb-12 flex items-center">
+          {% include './includes/back.twig' %}
+          <span class="ml-4 opacity-25">Back to blog</span>
+        </a>
+        <div class="rounded-lg w-full bg-white-100 shadow p-5 mb-16">
+          <img src="https://placehold.it/800x512" width="100%">
+        </div>
+        <h1 class="font-serif font-bold text-4xl leading-snug mb-12">{{ entry.title }}</h1>
+        <div class="flex mt-8 pt-8 pb-10 border-solid border-opacity-10 border-t-2 border-b-2 border-dark">
+          <a href="https://twitter.com/madebycrevans" target="_blank" class="bg-twitter shadow-twitter rounded text-white-100 font-bold flex items-center p-4">
+            {% include './includes/twitter.twig' %}
+            <span class="ml-2">@MadeByCrevans</span>
+          </a>
+          <a href="https://github.com/crevans02" target="_blank" class="bg-github shadow-github rounded text-white-100 font-bold flex items-center p-4 ml-6">
+            {% include './includes/github.twig' %}
+            <span class="ml-2">Crevans02</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Article Header End -->
+
+    <!-- Article -->
+    <div class="w-full pt-8">
+      <div class="w-full md:w-3/4">
+        {% for block in entry.contentBlock.all() %}
+          {% if block.type == "textBlock" %}
+            <article class="article">
+              {{ block.textContent }}
+            </article>
+          {% elseif block.type == "codeBlock" %}
+            {{ craft.syntaxHighlighter.render(block.codeContent) }}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <!-- Article End -->
+
+  </div>
+</main>
+
+{% include './includes/footer.twig' %}
+</body>
+</html>

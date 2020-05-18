@@ -1,0 +1,55 @@
+article {
+	@apply text-lg;
+
+	h1, h2, h3, h4, h5, h6 {
+		@apply mt-10 text-dark font-bold font-serif;
+	}
+
+	h1 {
+		@apply text-2xl;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+
+	h3 {
+		@apply text-xl;
+	}
+
+	h4, h5 {
+		@apply text-dark text-lg;
+	}
+
+	* + * {
+		@apply mt-5;
+	}
+
+	p {
+		@apply text-dark leading-relaxed;
+	}
+
+	ul {
+		@apply text-dark leading-relaxed list-disc pl-4;
+
+		li {
+			@apply mt-2 pl-2;
+
+			&:nth-last-of-type(1) {
+				@apply mb-8;
+			}
+		}
+	}
+
+	a {
+		@apply text-dark underline;
+
+		&:hover {
+			@apply text-primary;
+		}
+	}
+}
+
+.code-section {
+	@apply my-10;
+}
