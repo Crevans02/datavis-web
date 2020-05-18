@@ -41,7 +41,15 @@
               {{ block.textContent }}
             </article>
           {% elseif block.type == "codeBlock" %}
-            {{ craft.syntaxHighlighter.render(block.codeContent) }}
+            <div class="code-section">
+              <pre class="language-js line-numbers flex">
+                <code>
+                  {% spaceless %}
+                    {{ block.codeContent }}
+                  {% endspaceless %}
+                </code>
+              </pre>
+            </div>
           {% endif %}
         {% endfor %}
       </div>
