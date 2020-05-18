@@ -15,7 +15,7 @@
           <span class="ml-4 opacity-25">Back to blog</span>
         </a>
         <div class="rounded-lg w-full bg-white-100 shadow p-5 mb-16">
-          <img src="https://placehold.it/800x512" width="100%">
+          <img src="{{ entry.heroImage.first().getUrl() }}" width="100%">
         </div>
         <h1 class="font-serif font-bold text-4xl leading-snug mb-12">{{ entry.title }}</h1>
         <div class="flex mt-8 pt-8 pb-10 border-solid border-opacity-10 border-t-2 border-b-2 border-dark">

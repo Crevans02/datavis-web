@@ -30,7 +30,7 @@
       {% for entry in craft.entries().section('blog').all() %}
       <a href="{{ entry.url() }}" class="bg-white-100 shadow w-full rounded-lg flex flex-col md:flex-row md:items-center p-5 mb-10">
         <div class="rounded w-full md:w-64 h-64 bg-beige flex-shrink-0 md:mb-0 overflow-hidden">
-          <img src="https://placehold.it/512x512">
+          <img src="{{ entry.heroImage.first().getUrl('blogThumbnail') }}">
         </div>
         <div class="md:ml-10 w-full py-5">
           <div class="flex flex-col pr-5 md:pr-8">
@@ -46,40 +46,6 @@
         </div>
       </a>
       {% endfor %}
-      <a href="/" class="bg-white-100 shadow w-full rounded-lg flex flex-col md:flex-row md:items-center p-5 mb-10">
-        <div class="rounded w-full md:w-64 h-64 bg-beige flex-shrink-0 md:mb-0 overflow-hidden">
-          <img src="https://placehold.it/512x512">
-        </div>
-        <div class="md:ml-10 w-full py-5">
-          <div class="flex flex-col pr-5 md:pr-8">
-            <h2 class="font-serif font-bold text-2xl leading-snug mb-4">Day 1 - #100DaysOfDataVis</h2>
-            <p class="text-base leading-normal">GDPR extends the definition of personal data to include digital identifiers such as IP addresses. Identifiers in telematics systems that correlate data and drivers, including information on location, speed or driving events, may.</p>
-            <div class="flex">
-              <div class="bg-primary shadow-primary rounded font-medium flex items-center mt-8 p-4">
-                <span class="mr-16 opacity-50">Read</span>
-                {% include './includes/arrow.twig' %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="/" class="bg-white-100 shadow w-full rounded-lg flex flex-col md:flex-row md:items-center p-5 mb-10">
-        <div class="rounded w-full md:w-64 h-64 bg-beige flex-shrink-0 md:mb-0 overflow-hidden">
-          <img src="https://placehold.it/512x512">
-        </div>
-        <div class="md:ml-10 w-full py-5">
-          <div class="flex flex-col pr-5 md:pr-8">
-            <h2 class="font-serif font-bold text-2xl leading-snug mb-4">Day 1 - #100DaysOfDataVis</h2>
-            <p class="text-base leading-normal">GDPR extends the definition of personal data to include digital identifiers such as IP addresses. Identifiers in telematics systems that correlate data and drivers, including information on location.</p>
-            <div class="flex">
-              <div class="bg-primary shadow-primary rounded font-medium flex items-center mt-8 p-4">
-                <span class="mr-16 opacity-50">Read</span>
-                {% include './includes/arrow.twig' %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
       <!-- Articles End -->
 
     </div>
