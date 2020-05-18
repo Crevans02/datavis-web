@@ -8,9 +8,9 @@
     <div class="container mx-auto">
 
       <!-- Hero -->
-      <div class="w-full pt-16 pb-32">
+      <div class="w-full md:pt-16 pb-16 md:pb-32">
         <div class="w-full md:w-3/4">
-          <h1 class="font-serif font-bold text-4xl leading-snug mb-4">The ultimate resource for creating data visualisations</h1>
+          <h1 class="font-serif font-bold text-3xl md:text-4xl leading-snug mb-4">The ultimate resource for creating data visualisations</h1>
           <p class="text-lg leading-normal md:pr-32">Learn how to build interactive data visualisations with Vue.js and D3.js. Get started today an level up!</p>
           <div class="flex mt-8">
             <a href="https://twitter.com/madebycrevans" target="_blank" class="bg-twitter shadow-twitter rounded text-white-100 font-bold flex items-center p-5">
@@ -19,7 +19,7 @@
             </a>
             <a href="https://github.com/crevans02" target="_blank" class="bg-github shadow-github rounded text-white-100 font-bold flex items-center p-5 ml-6">
               {% include './includes/github.twig' %}
-              <span class="ml-2">MadeByCrevans</span>
+              <span class="ml-2 hidden md:inline">MadeByCrevans</span>
             </a>
           </div>
         </div>
@@ -29,7 +29,7 @@
       <!-- Articles -->
       {% for entry in craft.entries().section('blog').all() %}
       <a href="{{ entry.url() }}" class="bg-white-100 shadow w-full rounded-lg flex flex-col md:flex-row md:items-center p-5 mb-10">
-        <div class="rounded w-full md:w-64 h-64 bg-beige flex-shrink-0 md:mb-0 overflow-hidden">
+        <div class="rounded w-full md:w-64 md:h-64 bg-beige flex-shrink-0 md:mb-0 overflow-hidden">
           <img src="{{ entry.heroImage.first().getUrl('blogThumbnail') }}">
         </div>
         <div class="md:ml-10 w-full py-5">

@@ -8,16 +8,16 @@
   <div class="container mx-auto">
 
     <!-- Article Header -->
-    <div class="w-full pt-16">
+    <div class="w-full md:pt-16">
       <div class="w-full md:w-3/4">
-        <a href="/" class="mb-12 flex items-center">
+        <a href="/" class="mb-6 md:mb-12 flex items-center">
           {% include './includes/back.twig' %}
           <span class="ml-4 opacity-25">Back to blog</span>
         </a>
-        <div class="rounded-lg w-full bg-white-100 shadow p-5 mb-16">
+        <div class="rounded-lg w-full bg-white-100 shadow p-5 mb-8 md:mb-16">
           <img src="{{ entry.heroImage.first().getUrl() }}" width="100%">
         </div>
-        <h1 class="font-serif font-bold text-4xl leading-snug mb-12">{{ entry.title }}</h1>
+        <h1 class="font-serif font-bold text-3xl md:text-4xl leading-snug mb-6 md:mb-12">{{ entry.title }}</h1>
         <div class="flex mt-8 pt-8 pb-10 border-solid border-opacity-10 border-t-2 border-b-2 border-dark">
           <a href="https://twitter.com/madebycrevans" target="_blank" class="bg-twitter shadow-twitter rounded text-white-100 font-bold flex items-center p-4">
             {% include './includes/twitter.twig' %}
@@ -25,7 +25,7 @@
           </a>
           <a href="https://github.com/crevans02" target="_blank" class="bg-github shadow-github rounded text-white-100 font-bold flex items-center p-4 ml-6">
             {% include './includes/github.twig' %}
-            <span class="ml-2">Crevans02</span>
+            <span class="ml-2 hidden md:inline">Crevans02</span>
           </a>
         </div>
       </div>
