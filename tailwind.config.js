@@ -35,8 +35,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'sans': ['Circular Std', 'sans-serif'],
-      'serif': ['P22 Mackinac Pro', 'serif'],
+      'sans': ['Lato', 'sans-serif'],
+      'serif': ['p22-mackinac-pro', 'serif'],
     },
     boxShadow: {
       default: '4px 4px 0px 0 rgba(0, 0, 0, 0.05)',

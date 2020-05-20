@@ -415,7 +415,7 @@ ul {
  */
 
 html {
-  font-family: Circular Std, sans-serif; /* 1 */
+  font-family: Lato, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -1027,7 +1027,7 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   color: #0E1723;
   color: rgba(14, 23, 35, var(--text-opacity));
   font-weight: 700;
-  font-family: P22 Mackinac Pro, serif;
+  font-family: p22-mackinac-pro, serif;
 }
 
 article h1 {
@@ -3387,11 +3387,11 @@ pre[class*=language-].line-numbers > code {
 }
 
 .font-sans {
-  font-family: Circular Std, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 .font-serif {
-  font-family: P22 Mackinac Pro, serif;
+  font-family: p22-mackinac-pro, serif;
 }
 
 .font-hairline {
@@ -12303,11 +12303,11 @@ pre[class*=language-].line-numbers > code {
   }
 
   .sm\:font-sans {
-    font-family: Circular Std, sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .sm\:font-serif {
-    font-family: P22 Mackinac Pro, serif;
+    font-family: p22-mackinac-pro, serif;
   }
 
   .sm\:font-hairline {
@@ -21220,11 +21220,11 @@ pre[class*=language-].line-numbers > code {
   }
 
   .md\:font-sans {
-    font-family: Circular Std, sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .md\:font-serif {
-    font-family: P22 Mackinac Pro, serif;
+    font-family: p22-mackinac-pro, serif;
   }
 
   .md\:font-hairline {
@@ -30137,11 +30137,11 @@ pre[class*=language-].line-numbers > code {
   }
 
   .lg\:font-sans {
-    font-family: Circular Std, sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .lg\:font-serif {
-    font-family: P22 Mackinac Pro, serif;
+    font-family: p22-mackinac-pro, serif;
   }
 
   .lg\:font-hairline {
@@ -39054,11 +39054,11 @@ pre[class*=language-].line-numbers > code {
   }
 
   .xl\:font-sans {
-    font-family: Circular Std, sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .xl\:font-serif {
-    font-family: P22 Mackinac Pro, serif;
+    font-family: p22-mackinac-pro, serif;
   }
 
   .xl\:font-hairline {
