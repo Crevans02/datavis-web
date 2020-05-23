@@ -48,10 +48,10 @@ article {
 			@apply text-primary;
 		}
 	}
+}
 
-	iframe {
-		@apply rounded-lg w-full bg-white-100 shadow p-5;
-	}
+iframe {
+	@apply my-10 rounded-lg w-full bg-white-100 shadow p-5;
 }
 
 .code-section {
